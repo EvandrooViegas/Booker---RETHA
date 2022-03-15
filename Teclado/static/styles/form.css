@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+form label {
+    font-size: 14px;
+    
+    
+}
+
+form input {
+    padding: 10px;
+}
+
+form #date, #name, #email, #for{
+    padding: 4px;
+    border: none;
+    border-radius: 7px;
+    background: #e6e6e6;
+    transition: .3s;
+}
+
+form #date:focus, #name:focus, #email:focus, #for:focus{
+    background: none;
+    border-bottom:1px solid #BB3500 ;
+    border-radius: 0px;
+    outline: none;
+}
+
+form #date:hover, #name:hover, #email:hover, #for:hover{
+    background: none;
+    border-bottom:1px solid #BB3500 ;
+    border-radius: 0px;
+    outline: none;
+}
+
+
+
+
+
+form .title {
+    padding: 10px;
+    color: white;
+    background-color: #BB3500;
+    border-radius: 7px 7px 0px 0px;
+}
+
+form #book-button {
+    padding: 10px;
+    border: none;
+    background-color: #BB3500;
+    color: white;
+    border-radius: 7px;
+    margin: 20px;
+    width: 40%;
+    cursor: pointer;
+    transition: .7s;
+    
+}
+
+form #book-button:hover {
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 7px;
+    margin: 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+form #date:hover, #name:hover, #email:hover, #for:hover{
+
+}   */

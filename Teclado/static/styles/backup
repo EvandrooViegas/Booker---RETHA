@@ -1,0 +1,53 @@
+.table {
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    border-radius: 7px 7px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+}
+
+.table tr {
+    background-color: #BB3500;
+    color: white;
+    font-weight: bold;
+
+}
+
+.table th, .table td {
+    padding: 15px;
+}
+
+.table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tr:last-of-type {
+    border-bottom: 2px solid #BB3500;
+}
+
+
+/*OPTIONS CONFIGURATION*/
+table .edit {
+    color: #0061bd;
+}
+
+table .options {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+
+}
+
+table .options:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #BB3500;
+
+}
+
+
+
+td .delete {
+    color: #BB3500;
+}

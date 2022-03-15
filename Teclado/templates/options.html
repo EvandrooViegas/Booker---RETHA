@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+
+
+{% block statics %}
+    <script src="/static/scripts/base.js"></script>
+    <link rel="stylesheet" href="/static/styles/table.css">
+    <script src="https://kit.fontawesome.com/6d4cb06676.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/styles/options.css">
+{% endblock %}
+
+
+{% block content %}
+    <!-- Mensagem Alert -->
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 40%;">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+
+
+    <div class="main">
+        <!-- <div class="container">
+            <h2>Update</h2>
+            <p>ID: {{ book.id }}</p>
+            <p>Name: {{ book.name }}</p>
+            <p>Email: {{ book.email }}</p>
+            <p>For: {{ book.for_people }}</p>
+        </div> -->
+
+        <div class="p-3 border" style="width: 40%; margin: auto; margin-top: 10px;">
+            <div style="margin: auto; border-radius: 3px; padding: 10px;">
+                <h2 style="text-align: center;">Update</h2>
+                <p><strong>ID:</strong> {{ book.id }}</p>
+                <p><strong>Date:</strong> {{ book.date }}</p>
+                <p><strong>Name:</strong> {{ book.name }}</p>
+                <p><strong>Email:</strong> {{ book.email }}</p>
+                <p><strong>For:</strong> {{ book.for_people }}</p>
+            </div>
+        </div>
+
+        <div class="options">
+            <button type="button" class="btn btn-primary"><a href="{{ url_for('update', id=book.id) }}">Update</a></button>
+            <button type="button" class="btn btn-danger"><a href="{{ url_for('delete', id=book.id) }}">Delete</a></button>
+           
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+

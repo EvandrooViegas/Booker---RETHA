@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Poppins:ital,wght@1,500;1,800&family=Shippori+Antique+B1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+.main {
+    min-height: 100%;
+}
+
+.container {
+    
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.container h2 {
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #BB3500;
+}
+
+.container p {
+    color: black;
+}
+
+.options {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px
+}
+
+.options a {
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+
+.options .delete {
+    background-color: black;
+}
+
+.options .update {
+    background-color: #BB3500;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

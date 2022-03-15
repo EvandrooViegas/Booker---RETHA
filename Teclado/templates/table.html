@@ -1,0 +1,117 @@
+
+{% extends "base.html" %}
+
+
+    {% block title %}
+        <title>Table</title>
+    {% endblock %}
+    {% block statics %}
+        <script src="/static/scripts/base.js"></script>
+        <script src="https://kit.fontawesome.com/6d4cb06676.js" crossorigin="anonymous"></script>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/table.css') }}">
+    {% endblock %}
+
+
+
+
+{% block content %}
+    <center>
+        {% for message in get_flashed_messages() %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 40%;">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+
+        <div class="search" style="width: 60%; margin: 10px;">
+            <form action="{{ url_for('FilterBooks') }}" method="post">
+                <input type="text" placeholder="Look for..." class="form-control" name="search_key" id="search_key" style="display: inline; width: 70%; margin-right: 10px;"><button class="btn btn-dark" style="display: inline; width: 14%;">Search</button>
+            </form>
+        </div>
+        <!-- <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>For</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+
+
+            {% for book in bookDB %}
+            <tr>
+                <td> {{ book.id }} </td>
+                <td> {{ book.date }} </td>
+                <td> {{ book.name }} </td>
+                <td> {{ book.email }} </td>
+                <td> {{ book.for_people }} </td>
+
+             
+                <td>
+                    <a href="{{ url_for('options', id=book.id) }}" class="options"><i class="fa-solid fa-pen"></i></a>
+                    <a href="{{ url_for('delete', id=book.id) }}" class="delete"><i class="fa-solid fa-trash-can"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table> -->
+
+        <table class="table table-hover" style="width: 70%;">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">For</th>
+                <th scope="col">Options</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+                {% for book in bookDB %}
+                <tr scop="row">
+                    <td> {{ book.id }} </td>
+                    <td> {{ book.date }} </td>
+                    <td> {{ book.name }} </td>
+                    <td> {{ book.email }} </td>
+                    <td> {{ book.for_people }} </td>
+
+                
+                    <td>
+                        <a href="{{ url_for('options', id=book.id) }}" class="options"><i class="fa-solid fa-pen"></i></a>
+                        <a href="{{ url_for('delete', id=book.id) }}" class="delete"><i class="fa-solid fa-trash-can"></i></a>
+                    </td>
+                </tr>
+                {% endfor %}
+              <!-- <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr> -->
+            </tbody>
+          </table>
+
+
+    </center>
+
+
+{% endblock %}
+
+
+

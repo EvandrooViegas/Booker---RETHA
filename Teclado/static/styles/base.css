@@ -1,0 +1,56 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Eczar:wght@800&family=Krona+One&family=Mulish:wght@700&family=Poppins:ital,wght@1,500;1,800&family=Shippori+Antique+B1&display=swap');* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    
+    padding: 10px;
+    background: #1d1d1d;
+    display: flex;
+    gap: 60%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.navigation {
+    
+    display: flex;
+    
+}
+nav li{
+    list-style: none;
+}
+
+nav a{
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+  
+}
+
+nav a:hover{
+    margin: 30px;
+    text-decoration: none;
+    background-color: #BB3500;
+    border-radius: 10px;
+    padding: 6px;
+  
+}
+
+nav .logo {    
+    cursor: pointer;
+    font-size: 20px;
+}
+nav .bo_logo{
+    font-family: 'Krona One', sans-serif;    
+    color: #fff;
+    font-size: 25px;
+    
+}
+
+nav .ok_logo{
+    font-family: 'Krona One', sans-serif;    
+    font-size: 25px;
+
+    color: #BB3500;
+} */
